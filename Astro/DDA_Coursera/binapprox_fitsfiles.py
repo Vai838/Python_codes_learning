@@ -114,3 +114,9 @@ def median_approx_fits(filenames, B):
 
     # Return the approximated median array
     return median
+
+
+#Testing:
+mean, std, left_bin, bins = median_bins_fits(['image0.fits', 'image1.fits', 'image2.fits'], 5)
+median = median_approx_fits(['image0.fits', 'image1.fits', 'image2.fits'], 5)
+print(mean[100, 100], std[100, 100], left_bin[100, 100], bins[100, 100], median[100, 100])
